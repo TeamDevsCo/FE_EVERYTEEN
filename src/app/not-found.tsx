@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 
+
 const NotFound: NextPage = () => {
     return (
         <div className='ml-auto flex h-screen flex-col items-center justify-center gap-y-5'>
