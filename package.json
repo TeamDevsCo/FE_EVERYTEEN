@@ -6,7 +6,9 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "format": "prettier --cache --write .",
+        "lint": "eslint --cache .",
+        "postinstall": "husky install"
     },
     "dependencies": {
         "@emotion/css": "^11.13.5",
