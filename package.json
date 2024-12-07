@@ -6,9 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "format": "prettier --cache --write .",
-        "lint": "eslint --cache .",
-        "postinstall": "husky install"
+        "lint": "next lint",
+        "openapi": "openapi-generator generate -i https://dev.yourapiserver.com/openapi.json -g typescript-axios -o ./models -c ./openapi.json --skip-validate-spec"
     },
     "dependencies": {
         "@emotion/css": "^11.13.5",
@@ -28,6 +27,7 @@
         "zustand": "^5.0.1"
     },
     "devDependencies": {
+        "@openapitools/openapi-generator-cli": "^2.15.3",
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
