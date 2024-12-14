@@ -38,3 +38,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore large files
+services/FE_EVERYTEEN/.yarn/unplugged/
+.nx/d/daemon.log
+.nx/d/
